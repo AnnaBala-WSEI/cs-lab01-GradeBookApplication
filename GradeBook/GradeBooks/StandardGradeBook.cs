@@ -9,9 +9,10 @@ namespace GradeBook.GradeBooks
     {
         public new string Name { get; set; }
 
-        public StandardGradeBook(string name) : base(name)
+        public StandardGradeBook(string name, bool isWeighted) : base(name, isWeighted)
         {
             Name = name;
+            IsWeighted = isWeighted;
             Type = GradeBookType.Standard;
         }
     }
